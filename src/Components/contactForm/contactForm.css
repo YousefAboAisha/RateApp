@@ -1,0 +1,83 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 1px 1px 5px #ddd, -1px -1px 5px #ddd;
+  width: 50%;
+}
+
+.right .input {
+  margin: 10px;
+}
+
+.right .input input,
+.right .input textarea {
+  padding: 7px;
+  outline: none;
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  resize: none;
+  border-radius: 3px;
+}
+
+.right .input input:focus,
+.right .input textarea:focus {
+  border-bottom: 2px solid teal;
+  border-right: 2px solid rgb(255, 255, 255);
+  transition: all 0.5s linear;
+}
+
+.right button {
+  padding: 8px 10px;
+  outline: none;
+  width: 25%;
+  border: none;
+  resize: none;
+  border-radius: 3px;
+  margin: 5px 10px;
+  background-color: #111;
+  border: 1px solid #111;
+  color: white;
+  font-weight: 600;
+  box-shadow: 1px 1px 5px #ddd, -1px -1px 5px #ddd;
+}
+
+.right button:hover {
+  background: none;
+  color: teal;
+  transition: color 0.3s linear;
+}
+
+.wrapper .left {
+  position: relative;
+  width: 50%;
+  height: 439px;
+}
+
+.wrapper .left img {
+  width: 100%;
+  height: 439px;
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper .right {
+    width: 100%;
+  }
+
+  .wrapper .left {
+    width: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.card {
+  margin: 5px;
+  width: 280px;
+  height: 370px;
+  flex: 1 0 280px;
+  box-shadow: 1px 1px 15px rgba(158, 158, 158, 0.795);
+  user-select: none;
+  transform: scale(0.9);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(0.9);
+  transition: all 0.35s ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  direction: rtl;
+  margin-top: 5px;
+}
+
+.header span {
+  font-size: 18px;
+  font-weight: 600;
+  color: teal;
+}
+
+.rate {
+  position: absolute;
+  left: 8px;
+  bottom: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate i {
+  margin: 0 5px;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rate i span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.default {
+  color: rgb(85, 85, 85);
+}
+
+.like {
+  color: blue;
+  transition: 0.3s;
+}
+
+.dislike {
+  color: red;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: 320px;
+  }
+}

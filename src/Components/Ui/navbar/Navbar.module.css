@@ -1,0 +1,16 @@
+Nav a {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+  outline: none;
+}
+
+Nav {
+  height: 90px;
+  z-index: "100000";
+  margin-bottom: "65px";
+  transition: all 0.3s linear;
+  background-color: #111;
+  right: 0px;
+}

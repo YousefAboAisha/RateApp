@@ -1,0 +1,39 @@
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  padding: 50px;
+}
+
+footer a.nav-link {
+  color: rgba(255, 255, 255, 0.753);
+  font-weight: 600;
+  transform: scale(0.85);
+  margin-bottom: 10px;
+}
+
+footer a.nav-link:hover {
+  color: white;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+footer a.nav-link:focus {
+  color: rgba(255, 255, 255, 0.753);
+}
+
+footer a.nav-link i {
+  font-size: 26px;
+}
+
+footer span {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.336);
+  width: 100%;
+}
