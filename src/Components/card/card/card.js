@@ -18,7 +18,7 @@ const ClientCard = (props) => {
 
     axios
       .put(
-        `https://rate-app-e4c05-default-rtdb.firebaseio.com/Cards/-MhOP_ogrIA34kPjyzWj/${id}/likes.json`,
+        `https://rate-app-e4c05-default-rtdb.firebaseio.com/${props.db}/${id}/likes.json`,
         value
       )
       .then((res) => {
@@ -36,7 +36,7 @@ const ClientCard = (props) => {
     }
     axios
       .put(
-        `https://rate-app-e4c05-default-rtdb.firebaseio.com/Cards/-MhOP_ogrIA34kPjyzWj/${id}/dislikes.json`,
+        `https://rate-app-e4c05-default-rtdb.firebaseio.com/${props.db}/${id}/dislikes.json`,
         value
       )
       .then((res) => {
@@ -54,13 +54,13 @@ const ClientCard = (props) => {
       <Card.Body>
         <div className={classes.header}>
           <span className={classes.first}>
-            الاسم:{" "}
+            الاسم:
             <span style={{ color: "black", marginRight: "5px" }}>
               {props.name}
             </span>
           </span>
           <span className={classes.first}>
-            الكلية:{" "}
+            الكلية:
             <span
               style={{ color: "black", marginRight: "5px", fontSize: "15px" }}
             >

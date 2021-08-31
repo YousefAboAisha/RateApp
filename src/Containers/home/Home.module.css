@@ -1,10 +1,7 @@
-body {
-  height: auto;
-}
-
 .wrapper {
-  margin-top: 90px;
   position: relative;
+  margin: 0px auto;
+  overflow-x: hidden;
 }
 
 .img {
@@ -18,20 +15,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   clip-path: ellipse(91% 72% at 50% 24%);
-}
-
-.img span:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  width: 1000px;
-  margin-top: 20px auto;
-  border-radius: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(20px);
+  padding: 10px;
 }
 
 .img span {
@@ -48,8 +32,8 @@ body {
   box-shadow: 1px 1px 10px rgba(29, 29, 29, 0.1),
     -1px -1px 10px rgba(29, 29, 29, 0.1);
   padding: 20px;
-  border: 4px solid rgba(199, 199, 199, 0.26);
   font-family: "Cairo", sans-serif;
+  transition: all 0.5s linear;
 }
 
 .img a::before {
@@ -157,6 +141,7 @@ body {
   text-align: center;
   font-weight: 600;
   box-shadow: -3px 3px 15px rgba(17, 17, 17, 0.808);
+  transition: all 0.3s linear;
 }
 
 .section1 .services .box:nth-of-type(1) {
@@ -174,7 +159,7 @@ body {
 
 .section1 .services .box:hover {
   background-color: #111;
-  transition: 0.2s;
+  transition: all 0.2s linear;
   color: white;
 }
 
@@ -243,9 +228,16 @@ body {
 
   .section1 .services .box:nth-child(1) {
     clip-path: none;
+    transition: clip 1.3s linear;
   }
 
   .section1 .services .box:nth-child(3) {
     clip-path: none;
+    transition: clip 1.3s linear;
+  }
+
+  .img span {
+    transition: all 0.5s linear;
+    font-size: 28px;
   }
 }

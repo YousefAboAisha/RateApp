@@ -253,11 +253,11 @@ const Engineering = () => {
                 img={elem.src}
                 name={elem.name}
                 section={elem.section}
-                info={elem.info}
                 likes={elem.likes}
                 dislikes={elem.dislikes}
                 site={elem.site}
                 id={index}
+                db="Cards/-MhOP_ogrIA34kPjyzWj"
               />
             </div>
           );

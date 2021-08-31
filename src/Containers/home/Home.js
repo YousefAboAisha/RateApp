@@ -32,7 +32,7 @@ const Home = () => {
       <div className={classes.img}>
         <div>
           <span>
-            مرحباً بكم في نظام التقييم الالكتروني في جامعة الأزهر في غزة
+            مرحباً بكم في نظام التقييم الالكتروني في جامعة الأزهر- غزة
           </span>
           <Nav.Link as={NavLink} to="/review/engineering">
             <i className="fas fa-arrow-right"></i>انتقل إلى صفحة التقييم

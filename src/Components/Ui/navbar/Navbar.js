@@ -55,12 +55,7 @@ const NavBar = (props) => {
 
   return (
     <div className="navbar-custom">
-      <Navbar
-        variant="dark"
-        expand="md"
-        fixed="top"
-        style={{ backgroundColor: "#111" }}
-      >
+      <Navbar variant="dark" expand="md" sticky="top">
         <Container style={{ backgroundColor: "#111" }}>
           <Navbar.Toggle aria-controls="default-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
