@@ -1,5 +1,6 @@
 # Prject Description
 Simple website for rating and reviewing the educational staff at AUG.
+Using: HTML, CSS, JS, React JS, Firebase, Bootstrap.
 
 # Getting Started with Create React App
 
