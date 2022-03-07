@@ -1,3 +1,6 @@
+# Prject Description
+Simple website for rating and reviewing the educational staff at AUG.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
